@@ -1,0 +1,188 @@
+/*************** Mobile First ***************/
+
+/*************** Desktop ***************/
+@media (min-width: 800px) {
+  .order-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  /***** header *****/
+  .grid-header {
+    display: grid;
+    grid-template-columns: auto 2fr auto auto;
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+
+  /*******     index page     *******/
+  .container_1-3-1 {
+    height: 982px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr auto auto 1fr;
+    gap: 10px;
+  }
+
+  .background_pic {
+    place-self: stretch;
+    object-fit: cover;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 4;
+  }
+
+  .box-1 {
+    grid-column: 2;
+    grid-row: 2;
+    place-self: center;
+    margin: 0;
+  }
+
+  .box-5 {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: start;
+  }
+
+  /*****
+  .box-2 {
+    grid-column: 2;
+    grid-row: 3;
+    place-self: start;
+  }
+  .box-3 {
+    grid-column: 2;
+    grid-row: 3;
+    place-self: center;
+  }
+  .box-4 {
+    grid-column: 2;
+    grid-row: 3;
+    place-self: end;
+  }
+   ****/
+
+  /*******     About page     *******/
+  .grid-about_1-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-inline-start: 3rem;
+    margin-inline-end: 3rem;
+  }
+  .self-portrait {
+    width: 500px;
+    height: auto;
+    place-self: end;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+  }
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    gap: 1rem;
+    place-self: center;
+  }
+
+  .contact-link {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    place-self: center;
+  }
+
+  /*******     Gallery page     *******/
+  .order-text {
+    flex-direction: column;
+    place-self: center;
+    text-align: center;
+  }
+
+  .gallery-grid_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px 500px;
+    gap: 20px;
+    margin-inline-start: 3rem;
+    margin-inline-end: 3rem;
+  }
+
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid_1-1-1 img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 2;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .billed-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .billed-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .billed-3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  .billed-4 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .billed-5 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .billed-6 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  /*******     Contact page     *******/
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centrer indholdet horisontalt */
+    justify-content: start;
+    min-height: 80vh; /* så den står midt på siden */
+    gap: 0.5rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 60%; /* gør felterne længere – justér fx til 70% hvis du vil have mere */
+    max-width: 600px; /* forhindrer at de bliver for brede på store skærme */
+    padding: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+    box-sizing: border-box;
+  }
+
+  .contact-form button {
+    width: 200px;
+    padding: 0.9rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+}
